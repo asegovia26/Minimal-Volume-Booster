@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Volume Booster</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1>Volume Booster</h1>
+        <p class="subtitle">Boost the sound of the current tab in real time</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="label-row">
+        <label for="volumeRange">Boost level</label>
+        <span id="volumeValue">100%</span>
+      </div>
+
+      <input
+        type="range"
+        id="volumeRange"
+        min="100"
+        max="500"
+        step="10"
+        value="100"
+      />
+
+      <div class="helper-row">
+        <span>100%</span>
+        <span>500%</span>
+      </div>
+
+      <p id="status" class="status">Ready.</p>
+    </section>
+
+    <section class="support-card">
+      <button id="donateBtn" class="donate-btn" type="button">
+        Buy me a coffee
+      </button>
+
+      <button id="alreadyDonatedBtn" class="ghost-btn" type="button">
+        I already supported it
+      </button>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
